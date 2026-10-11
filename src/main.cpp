@@ -15,7 +15,7 @@
 MCP2515 can(PIN_PB2);
 
 can_frame frame = {
-    .can_id = 0x123,
+    .can_id = 0x456,
     .can_dlc = 8,
     .data = {0x01, 0x23, 0x45, 0x67, 0x89, 0xAB, 0xCD, 0xEF}};
 
@@ -38,7 +38,7 @@ void loop()
     }
     // blink the LED
     digitalWrite(PIN_PD5, LOW);
-    delay(1000);
+    delay(100);
     digitalWrite(PIN_PD5, HIGH);
-    delay(1000);
+    delay(100);
 }
